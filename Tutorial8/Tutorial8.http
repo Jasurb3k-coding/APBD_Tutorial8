@@ -1,0 +1,33 @@
+@Tutorial8_HostAddress = http://localhost:5128
+
+### 1. GET /api/trips
+GET {{Tutorial8_HostAddress}}/api/Trips
+
+
+### 2. GET /api/clients/{id}/trips
+
+GET {{Tutorial8_HostAddress}}/api/Clients/1/trips
+
+
+### 3. POST /api/clients
+
+POST {{Tutorial8_HostAddress}}/api/clients/
+Content-Type: application/json
+
+{
+  "FirstName": "Jasurbek",
+  "LastName": "Zokirov",
+  "Email": "s32257@pjwstk.edu.pl",
+  "Telephone": "516399189",
+  "Pesel": "125678"
+}
+
+
+### 4. PUT /api/clients/{id}/trips/{tripId}
+
+PUT {{Tutorial8_HostAddress}}/api/clients/1/trips/2
+
+
+### 5. DELETE /api/clients/{id}/trips/{tripId}
+
+DELETE {{Tutorial8_HostAddress}}/api/clients/1/trips/2
